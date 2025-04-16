@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tiendu</title>
+
+    <!-- CSS (load bootstrap from a CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="" method="POST">
+        <h1>About you</h1>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input class="form-control" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <h1>About your store</h1>
+        <div class="form-group">
+          <label for="store-name">Store Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="store-name"
+            name="store_name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="store-name">Category dropdown</label>
+          <select class="form-control" id="category" name="category" required>
+            <option value="clothing">Clothing</option>
+            <option value="electronics">Electronics</option>
+            <option value="home">Home</option>
+            <option value="sports">Sports</option>
+            <option value="toys">Toys</option>
+            <option value="books">Books</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea
+            class="form-control"
+            id="description"
+            name="description"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Create Store</button>
+      </form>
+    </main>
+    <footer>Tiendu 2025. All rights reserved.</footer>
+  </body>
+</html>
